@@ -36,7 +36,7 @@ const ApiKeyManager = () => {
 
   const testGeminiApi = async (apiKey: string) => {
     try {
-      const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${apiKey}`, {
+      const response = await fetch(`https://generativelanguage.googleapis.com/v1/models?key=${apiKey}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
